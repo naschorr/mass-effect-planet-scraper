@@ -1,0 +1,25 @@
+{
+    // Project metadata
+    "name": "PlanetScraper",
+    // Configure the URL to scrape with
+    "root_url": "https://masseffect.fandom.com",
+    "planet_category_url_path": "/wiki/Category:Planets",
+    "url_query_param_format_string": "?from={}",
+    // Ignore all pages that start with any of these strings
+    "page_name_starts_with_blacklist": ["Category:", "File:", "Template:", "User:"],
+    // These properties of the Planet model are required, and a planet object with any of these set to None will be ignored
+    "required_properties": ["name", "galaxy", "cluster", "system", "description"],
+    /*
+        Some planetary data is vaguely defined, this maps those strings to sensible values.
+        Note that these keys are compared to incoming lowercase casted data.
+    */
+    "vague_data_mappings": {
+        "hundreds": 500,
+        "many": 50,
+        "trace": 0.01
+    },
+    // Configure data output
+    "output_directory_path": "out",
+    "planet_index_json_name": "planet_index",
+    "planet_data_json_name": "planet_data"
+}

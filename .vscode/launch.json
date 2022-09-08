@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Planet Scraper (Win)",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "python": "${workspaceFolder}\\Scripts\\python.exe",
+            "program": "${workspaceFolder}\\code\\planet_scraper.py",
+            "cwd": "${workspaceFolder}\\code",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            "justMyCode": false,
+            "debugOptions": [
+                "RedirectOutput"
+            ]
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
