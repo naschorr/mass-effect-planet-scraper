@@ -1,6 +1,6 @@
-# Planet Scraper
+# Mass Effect Planet Scraper
 
-Scrapes planetary data from the Mass Effect wiki for later usage
+Scrapes planetary data from the Mass Effect wiki
 
 ## The Data
 
